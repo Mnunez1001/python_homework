@@ -1,0 +1,45 @@
+function: hello_world
+positional parameters: none
+keyword parameters: none
+return: None
+----------------------------------------
+function: test_args
+positional parameters: (10, 20, 30)
+keyword parameters: none
+return: True
+----------------------------------------
+function: test_kwargs
+positional parameters: none
+keyword parameters: {'first_name': 'Alex', 'course': 'Python', 'city': 'Wichita'}
+return: <function logger_decorator at 0x000002B31CA1D120>
+----------------------------------------
+function: hello_world
+positional parameters: none
+keyword parameters: none
+return: None
+----------------------------------------
+function: test_args
+positional parameters: (10, 20, 30)
+keyword parameters: none
+return: True
+----------------------------------------
+function: test_kwargs
+positional parameters: none
+keyword parameters: {'first_name': 'Alex', 'course': 'Python', 'city': 'Wichita'}
+return: <function logger_decorator at 0x000002BA5444D260>
+----------------------------------------
+function: hello_world
+positional parameters: none
+keyword parameters: none
+return: None
+----------------------------------------
+function: test_args
+positional parameters: (10, 20, 30)
+keyword parameters: none
+return: True
+----------------------------------------
+function: test_kwargs
+positional parameters: none
+keyword parameters: {'first_name': 'Alex', 'course': 'Python', 'city': 'Wichita'}
+return: <function logger_decorator at 0x0000017459F2C040>
+----------------------------------------
