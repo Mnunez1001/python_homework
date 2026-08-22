@@ -1,0 +1,18 @@
+# Challenges Encountered in Assignment 8
+
+One of the main challenges I faced during this assignment was understanding the structure of the HTML and deciding which elements should be targeted by Selenium. 
+The pages contained many nested elements, so I used the browser developer tools to work through the DOM and identify the specific elements that contained the information I needed.
+
+For the Durham County Library scraper, I had to identify separate selectors for the search-result item, title, author, and format/year information. 
+I also had to account for books that could have multiple authors. I solved this by using `find_elements()` for the author links and joining multiple author names with semicolons.
+
+For the OWASP Top 10 task, the main challenge was creating an XPath that selected only the ten vulnerability links instead of every link on the webpage. 
+I used the heading with the ID `top-102025-list` as a starting point and then selected the links inside the ordered list that followed it. This allowed Selenium to find exactly 10 vulnerabilities.
+
+Another new concept was extracting information stored in HTML attributes instead of visible text. I used `.text` to retrieve each vulnerability title and `get_attribute("href")` to retrieve the corresponding URL.
+
+Testing each scraper incrementally was very helpful. I first checked how many elements Selenium found, then tested individual pieces of information before building the complete list of dictionaries and exporting the data. 
+This made it easier to verify that each step worked correctly before moving on to the next one.
+
+Overall, the assignment showed me that successful web scraping depends heavily on understanding the HTML structure of a webpage and choosing precise selectors. 
+It also reinforced the importance of checking `robots.txt`, scraping responsibly, and closing the Selenium WebDriver with `driver.quit()` after the program finishes.
